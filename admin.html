@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard | LAPSOFT</title><link rel="stylesheet" href="css/estilos.css"></head>
+<body>
+<header><div class="contenedor nav"><a href="index.html" class="logo">LAP<span>SOFT</span></a><nav><a href="index.html">Sitio</a><a class="activo" href="admin.html">Dashboard</a><a href="catalogo.html">Catálogo</a><a href="contacto.html">Solicitudes</a></nav></div></header>
+<main>
+<section class="pagina-cabecera"><div class="contenedor"><p class="etiqueta">ADMINISTRACIÓN</p><h1>Panel empresarial LAPSOFT.</h1><p>Prototipo de gestión interna. Los datos de ejemplo se almacenan en el navegador para demostrar la lógica del sistema.</p></div></section>
+<section class="seccion"><div class="contenedor">
+<div class="kpis"><div><span>Valor del inventario</span><strong id="kpiInventario">$0</strong></div><div><span>Ingresos mensuales</span><strong id="kpiIngresos">$0</strong></div><div><span>Gastos mensuales</span><strong id="kpiGastos">$0</strong></div><div><span>Utilidad estimada</span><strong id="kpiUtilidad">$0</strong></div></div>
+<div class="admin-grid">
+<div class="panel"><div class="panel-title"><h2>Inventario</h2><button class="btn btn-pequeno" id="btnReset">Restablecer demo</button></div><table><thead><tr><th>Código</th><th>Equipo</th><th>Estado</th><th>Costo</th><th>Canon</th></tr></thead><tbody id="tablaInventario"></tbody></table></div>
+<div class="panel"><h2>Resumen contable</h2><div class="resumen-list"><div><span>Ingresos por alquiler</span><b id="resIngreso">$0</b></div><div><span>Mantenimiento</span><b id="resMant">$0</b></div><div><span>Administración</span><b id="resAdmin">$0</b></div><div class="total"><span>Utilidad estimada</span><b id="resUtilidad">$0</b></div></div><p class="nota">La utilidad es una proyección del prototipo y no reemplaza una contabilidad financiera formal.</p></div>
+</div>
+<div class="panel mt"><div class="panel-title"><h2>Agregar movimiento</h2></div><form id="formMovimiento" class="mov-form"><label>Tipo<select name="tipo"><option value="ingreso">Ingreso</option><option value="gasto">Gasto</option></select></label><label>Concepto<input required name="concepto" placeholder="Ej. mantenimiento equipo LAP-003"></label><label>Valor<input required type="number" min="0" name="valor"></label><button class="btn">Registrar</button></form><div id="movimientos"></div></div>
+</div></section>
+</main>
+<footer><div class="contenedor footer-grid"><div><a class="logo" href="index.html">LAP<span>SOFT</span></a><p>Tecnología que impulsa tus ideas.</p></div><div><h4>Empresa</h4><a href="catalogo.html">Equipos</a><a href="servicios.html">Servicios</a></div><div><h4>Gestión</h4><a href="admin.html">Dashboard</a></div><div><h4>Ubicación</h4><p>Cali, Valle del Cauca<br>Colombia</p></div></div><div class="copyright">© 2026 LAPSOFT · Proyecto empresarial académico</div></footer>
+<script src="js/app.js"></script>
+</body></html>
